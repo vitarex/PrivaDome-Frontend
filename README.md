@@ -1,0 +1,1 @@
+Angular based frontend for the PrivaDome DNS service, with a Django RESTful backend web application. Served with Twisted.
