@@ -3,7 +3,7 @@ import pdb
 
 import datetime
 
-from privadome import procbridge
+import procbridge
 import json
 
 from rest_framework import permissions, viewsets, mixins, status
@@ -16,6 +16,7 @@ from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.authtoken.models import Token
 
 from django.contrib.auth.models import User
+from django.conf import settings
 
 from .serializers import UserListSerializer,\
                          UserCreateSerializer,\
@@ -23,7 +24,7 @@ from .serializers import UserListSerializer,\
 
 from .permissions import IsAdminOrSelf
 
-PROC_HOST = '127.0.0.1'
+PROC_HOST = settings.PRIVADOME_CORE_HOST
 PROC_PORT_POLICY = 8077
 PROC_PORT_DATA = 8090
 

@@ -25,6 +25,8 @@ SECRET_KEY = 'ksp)ddp4!!!^qsyb*6bkv7g2+jua2j76c!5c*)p4)$h72ij_=9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+PRIVADOME_CORE_HOST = "127.0.0.1"
+
 ALLOWED_HOSTS = ['*']
 
 
